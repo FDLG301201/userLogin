@@ -5,6 +5,7 @@ import Home from './components/login/Home';
 import Login from './components/login/Login';
 import Register from './components/login/Register';
 import { AuthProvider } from './context/authContext';
+import ResetPassword from './components/login/ResetPassword';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path='/login' element={<Login/>} />
 
         <Route path='/register' element={<Register/>} />
+
+        <Route path='/resetpassword' element={<ResetPassword/>} />
     </Routes>
     </AuthProvider>
   );
